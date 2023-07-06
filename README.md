@@ -1,2 +1,1 @@
-# repositorio-Henry
-este es un repositorio del modulo dos
+prueba de como crear un repositorio y clonarlo desde git hub
