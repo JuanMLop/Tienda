@@ -132,9 +132,9 @@ class Producto:
             reducir = self.__valorUnitario * 0.10
             self.__valorUnitario - reducir
         
-        elif(self.__tipo== "DROGUERIA"):
-                reducir= self.__valorUnitario * 0.10
-                self.__valorUnitario - reducir
+        elif(self.__tipo== "FARMACIA"):
+            reducir= self.__valorUnitario * 0.10
+            self.__valorUnitario - reducir
                 
         elif(self.__tipo== "SUPERMERCADO"):
             aumentar = self.__valorUnitario * 0.05
@@ -143,6 +143,15 @@ class Producto:
         else:
             print("Este producto no tiene descuento por tipo de tienda.")
 
+    def nombreTipoProducto(self):
+        if(self.__tipo== "SUPERMERCADO"):
+            return print("El producto es de supermercado")
+        elif(self.__tipo== "PAPELERIA"):
+            return print("El producto es de papeleria")
+        elif(self.__tipo== "FARMACIA"):
+            return print("El producto es de farmacia")
+        else:
+            return print("Este tipo de producto no existe")
 
         
         
